@@ -11,13 +11,7 @@ const fetchData = () => {
               .querySelector(`[data-node-name*="${customData}"]`)
               .setAttribute("src", data[customData]);
           } else {
-            let element = document.querySelector(`[data-node-name*="${customData}"]`);
-            if (element) {
-              element.innerText = data[customData];
-            } else {
-              console.log(`Element with data-node-name containing "${customData}" not found`);
-            }
-            
+            document.querySelector(`[data-node-name*="${customData}"]`).innerText = data[customData];
           }
         }
 
