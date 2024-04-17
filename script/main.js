@@ -238,7 +238,7 @@ const animationTimeline = () => {
       {
         opacity: 0,
         y: -50,
-        // scale: 0.3,
+        scale: 0.3,
         rotation: 150,
         skewX: "30deg",
         ease: Elastic.easeOut.config(1, 0.5)
@@ -298,8 +298,8 @@ const animationTimeline = () => {
       "+=1"
     );
 
-  // tl.seek("currentStep");
-  // tl.timeScale(2);
+  tl.seek("currentStep");
+  tl.timeScale(2);
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
